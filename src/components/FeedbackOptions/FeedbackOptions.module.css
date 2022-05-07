@@ -1,0 +1,22 @@
+.listItem {
+  margin-right: 10px;
+}
+.list {
+  display: flex;
+}
+
+.list {
+  display: flex;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.wrapp {
+  padding: 20px;
+}
+Section {
+  padding: 20px;
+}
