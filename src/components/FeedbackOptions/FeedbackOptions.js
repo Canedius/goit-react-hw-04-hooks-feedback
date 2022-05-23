@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types'; // ES6
 import s from './FeedbackOptions.module.css';
 function FeedbackOptions({ onLeaveFeedback, options }) {
+  console.log(options);
   return (
     <ul className={s.list}>
-      {Object.keys(options).map(option => (
+      {options.map(option => (
         <li className={s.listItem} key={option}>
           <button type="button" onClick={onLeaveFeedback}>
-            {option.charAt(0).toUpperCase() + option.slice(1)}
+            {option}
           </button>
         </li>
       ))}
