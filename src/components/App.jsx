@@ -16,11 +16,11 @@ export const App = () => {
           setGood(good + 1 )
           break;
           case "neutral":
-            setNeutral(neutral + 1 )
+          setNeutral(neutral + 1 )
           break;
           case  "bad":
-            setBad(bad + 1 )
-            break;
+          setBad(bad + 1 )
+          break;
         default: alert("ошибка")
          
       }
@@ -30,8 +30,7 @@ export const App = () => {
      return good+neutral+bad  
     }
     const countPositiveFeedbackPercentage = total =>{
-        return total?Math.round((good/total)*100) : 0
-        
+        return total?Math.round((good/total)*100) : 0   
     }
 
         const total = countTotalFeedback()
